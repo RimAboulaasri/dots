@@ -10,7 +10,6 @@ export MANPAGER="sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu colo
                       -c 'noremap q :quit<CR>' -\""
 
 export DEV="$HOME/Developer"
-export LLVM="$DEV/open-source/llvm.org"
 
 export TERM=xterm-256color
 export DISPLAY=:0
@@ -21,7 +20,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH=$HOME/.cargo/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
-export SCCACHE_CACHE_SIZE="100G"
 
 [ -x "$(command -v bat)" ] && alias cat="bat"
 
@@ -46,7 +44,6 @@ alias rm="move_to_trash"
 alias cd="cd -P"
 
 alias dev='cd $DEV'
-alias llvm='cd $LLVM'
 
 alias ga='git add '
 alias gs='git status'
